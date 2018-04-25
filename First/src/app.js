@@ -1,4 +1,8 @@
-module.exports=function(){
+import Text from './json/title.json';
+
+const config=function(){
 	var firstTitle=document.createElement('h1');
-	firstTitle.innerHTML="这是学习webpack的第一个例子,包含配置文件";
-	re
+	firstTitle.innerHTML=Text.greet;
+	return firstTitle;
+};
+export default config;

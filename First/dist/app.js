@@ -76,10 +76,40 @@
   !*** ./src/app.js ***!
   \********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports=function(){\r\n\tvar firstTitle=document.createElement('h1');\r\n\tfirstTitle.innerHTML=\"这是学习webpack的第一个例子\";\r\n\treturn firstTitle;\r\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvYXBwLmpzPzExMTIiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsImZpbGUiOiIuL3NyYy9hcHAuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cz1mdW5jdGlvbigpe1xyXG5cdHZhciBmaXJzdFRpdGxlPWRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2gxJyk7XHJcblx0Zmlyc3RUaXRsZS5pbm5lckhUTUw9XCLov5nmmK/lrabkuaB3ZWJwYWNr55qE56ys5LiA5Liq5L6L5a2QXCI7XHJcblx0cmV0dXJuIGZpcnN0VGl0bGU7XHJcbn0iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/app.js\n");
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _title = __webpack_require__(/*! ./json/title.json */ "./src/json/title.json");
+
+var _title2 = _interopRequireDefault(_title);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var config = function config() {
+	var firstTitle = document.createElement('h1');
+	firstTitle.innerHTML = _title2.default.greet;
+	return firstTitle;
+};
+exports.default = config;
+
+/***/ }),
+
+/***/ "./src/json/title.json":
+/*!*****************************!*\
+  !*** ./src/json/title.json ***!
+  \*****************************/
+/*! exports provided: greet, default */
+/***/ (function(module) {
+
+module.exports = {"greet":"这是学习webpack的第一个例子,包含配置文件"};
 
 /***/ })
 
 /******/ });
+//# sourceMappingURL=app.js.map
